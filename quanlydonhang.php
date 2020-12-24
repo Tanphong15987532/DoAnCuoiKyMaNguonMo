@@ -100,7 +100,7 @@ if($v['vanchuyen']=="Giao tận nơi")
   $ship = 25000;
 else
   $ship = 0;
-  $tong += $v['gia']*$v['soluong'];
+  $tong += $v['gia']*$v['soluong']+$ship;
   
  }
  ?>
