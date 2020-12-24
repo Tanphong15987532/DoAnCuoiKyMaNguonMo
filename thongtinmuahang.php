@@ -72,7 +72,7 @@ $sql= 'select * from sanpham';
 				
 			</div>
 			<div class="col-md-4"style="padding:10px 0px;">
-				<input id="sdt" style="width: 199px;height: 40px;border-radius: 7px;border: 1px solid #737373;" type="text" name="sdt"  autocomplete="off" placeholder=" Số điện thoại  ">
+				<input id="sdt" style="width: 199px;height: 40px;border-radius: 7px;border: 1px solid #737373;" type="text" name="sdt" maxlength="10"  autocomplete="off" placeholder=" Số điện thoại  ">
 					<div id="loi-sdt"></div>
 				
 
@@ -255,7 +255,7 @@ $sql= 'SELECT MAX(mahd) FROM hoadon WHERE mahd < 10000;';
 
 </script>
 
-<!-- <script>
+ <script>
 	$(document).ready(function(){
 	$("#sdt").blur(function(){
 		var u = $(this).val();
@@ -307,7 +307,7 @@ $sql= 'SELECT MAX(mahd) FROM hoadon WHERE mahd < 10000;';
 		}); 
 	});
 });
-</script> -->
+</script> 
 <script>
 	$(document).ready(function(){
 	$("#diachi").blur(function(){
