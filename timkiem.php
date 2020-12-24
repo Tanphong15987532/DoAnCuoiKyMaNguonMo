@@ -47,11 +47,11 @@ if(isset($_POST['btnSubmit']))
 	{
 		
 		
-
+			$chuhoa= mb_strtoupper($_POST['txtSearch'],'UTF-8');
 
 				foreach($data as $product)
 							{
-									
+									if(strpos(mb_strtoupper($product['tensp'],'UTF-8'),$chuhoa)!==false)
 								if(strpos($product['tensp'], $_POST['txtSearch']))
 										$kq[]=$product;	
 
